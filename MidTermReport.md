@@ -76,7 +76,7 @@ Total detection and extraction time of Detector and descriptor on all 10 images 
         BRISK 	                44.117 	    41.692 	    45.239 	    83.886 	    -           85.420
         ORB 	                9.238 	    8.070 	    11.913 	    47.540 	    -           54.913
         AKAZE 	                75.228 	    79.988	    79.708 	    118.158     132.906	        97.347
-        SIFT 	                127.863     127.969 	    - 	        166.634         - 	      187.878
+        SIFT 	                127.863     127.969 	     - 	            166.634         - 	      187.878
 
 
 Top 3 detector/descriptor combinations: These have been selected based on their performance merits such as highest number of matched keypoints and less processing time.
