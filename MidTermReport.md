@@ -15,28 +15,36 @@ MP.2 Keypoint Detection: Implement detectors HARRIS, FAST, BRISK, ORB, AKAZE, an
             1. Shitomasi detector
             2. Harris detector
             3. Modern detectors (HARIS, FAST, BRISK, ORB, AKAZE, SIFT)
-             OpenCV build-in detector class will be initialized and whole image will be scaned to detect key-points. Number of Keypoints and detection time are calculated for performance evaluation.
+             OpenCV build-in detector class will be initialized and whole image will be scaned to detect key-points. 
+             Number of Keypoints and detection time are calculated for performance evaluation.
 
 MP.3 Keypoint Removal: Remove all keypoints outside of a pre-defined rectangle and only use the keypoints within the rectangle for further processing.
 
-        Predefined rectangular area that covers the vehicle has been used to remove the keypoints outside that area. Here, the keypoints withing the rectangle indicates the points on the preceding vehicle. The number of keypoints on preceding vehicle are also estimated.
+        Predefined rectangular area that covers the vehicle has been used to remove the keypoints outside that area. 
+        Here, the keypoints withing the rectangle indicates the points on the preceding vehicle. 
+        The number of keypoints on preceding vehicle are also estimated.
 
 MP.4 Keypoint Descriptors: Implement descriptors BRIEF, ORB, FREAK, AKAZE and SIFT and make them selectable by setting a string accordingly.
 
-        Different descriptors like BRIEF, ORB, FREAK, AKAZE and SIFT  including the pre-built BRISK are implemented and used in this project. OpenCV built in descriptor class with defualt parameters have been used and the perfomrance is evaluated.
+        Different descriptors like BRIEF, ORB, FREAK, AKAZE and SIFT including the pre-built BRISK are implemented and used in this project. OpenCV built in descriptor class with defualt parameters have been used and the perfomrance is evaluated.
 
 MP.5 Descriptor Matching: Implement FLANN matching as well as k-nearest neighbor selection. Both methods must be selectable using the respective strings in the main function.
 
-        String based selection for both Brute-force matcher(MAT_BF) and FLANN matcher(MAT_FLANN) is implemented. In the project MAT_BF is used for evaluation purpose. Histogram of orientation or Binary type will be activated automatically depending on the descriptor type. Also implemented KNN selection with default of k = 2 nearest neighors.
+        String based selection for both Brute-force matcher(MAT_BF) and FLANN matcher(MAT_FLANN) is implemented. 
+        In the project MAT_BF is used for evaluation purpose. 
+        Histogram of orientation or Binary type will be activated automatically depending on the descriptor type. 
+        Also implemented KNN selection with default of k = 2 nearest neighors.
 
 MP.6 Descriptor Distance Ratio: Use the K-Nearest-Neighbor matching to implement the descriptor distance ratio test, which looks at the ratio of best vs. second-best match to decide whether to keep an associated pair of keypoints.
 
-        String based selection for both Nearest neighbor and K-Nearest Neighbor is implemented. KNN is used in the project implementation with Descriptor Distance Ratio of 0.8 to filter out the keypoints to make best match.
+        String based selection for both Nearest neighbor and K-Nearest Neighbor is implemented. 
+        KNN is used in the project implementation with Descriptor Distance Ratio of 0.8 
+        to filter out the keypoints to make best match.
 
 MP.7 Performance Evaluation 1: Count the number of keypoints on the preceding vehicle for all 10 images and take note of the distribution of their neighborhood size. Do this for all the detectors you have implemented.
 
         Detector Type 	Number of Keypoints on preceding vehicle for all 10 images
-        SHITOMASI 	            1179
+        SHITOMASI 	                1179
         HARRIS 	                248
         FAST 	                1491
         BRISK 	                2762
