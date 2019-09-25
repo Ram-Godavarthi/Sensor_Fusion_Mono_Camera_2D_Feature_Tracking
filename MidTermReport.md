@@ -53,6 +53,7 @@ MP.7 Performance Evaluation 1: Count the number of keypoints on the preceding ve
         SIFT 	                1386
 
 MP.8 Performance Evaluation 2: Count the number of matched keypoints for all 10 images using all possible combinations of detectors and descriptors. In the matching step, the BF approach is used with the descriptor distance ratio set to 0.8.
+
                                     Descriptors
         Detector            	BRISK 	BRIEF 	ORB 	FREAK 	AKAZE 	SIFT
         SHITOMASI 	             767 	 944 	 908 	 768 	   0     927
